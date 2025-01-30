@@ -1,4 +1,5 @@
-BASE-URL=http://localhost:3088
+BASE-URL=http://localhost:3000
+
 fichier local --> zone staging --> fichier versionné --> envoie vers github
 
 Creer un depot (.git): 
