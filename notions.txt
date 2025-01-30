@@ -1,0 +1,43 @@
+fichier local --> zone staging --> fichier versionné --> envoie vers github
+
+Creer un depot (.git): 
+	git init
+ajouter et valider des fichiers:
+	git add fichier.txt (ajouter le fichier à la zone staging)
+	git add . (ajoute tous les fichier ....)
+	git commit -m "message": valide les changement avec un message descriptif
+
+voir l'historique
+	git log
+	git log --inline
+
+
+creer branche
+	git branch : voir les branches existant
+	git branch login : créer une branche login
+	git checkout login: quiter la branche login
+	git switch login: basculer vers la branche login
+
+fusion des branches
+	git merge login: 
+
+conflit de fusion:
+git add fichier-conflit.txt
+git commit -m "resolution du conflit"
+
+
+git remote add origin (lien)
+git add .
+git pull origin main --allow-unrelated-histories
+:wq!
+git branch -m master main
+Procédures:
+	git remote add origin (lien)
+	git pull origin main 
+		si ca ne marche pas
+		git pull origin main --allow-unrelated-histories
+:wq!
+
+	git push -u origin (fichier)
+
+	
